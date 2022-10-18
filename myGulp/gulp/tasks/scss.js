@@ -36,17 +36,17 @@ export const scss = () => {
                 })
             )
         )
-        .pipe(
-            app.plugins.if(
-                app.isBuild,
-                webpcss(
-                    {
-                        webpClass: '.webp',
-                        noWebpClass: '.no-webp'
-                    }
-                )
-            )
-        )
+        // .pipe(
+        //     app.plugins.if(
+        //         app.isBuild,
+        //         webpcss(
+        //             {
+        //                 webpClass: '.webp',
+        //                 noWebpClass: '.no-webp'
+        //             }
+        //         )
+        //     )
+        // )
         // Розкоментувати якщо потрібна не стиснена копія файлу стилів
         .pipe(app.gulp.dest(app.path.build.css)) // Звичайний файл стилів
         .pipe(
