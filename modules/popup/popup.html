@@ -1,0 +1,40 @@
+<head>
+   <link rel="stylesheet" href="popup.css">
+</head>
+
+<!-- Потрібно в шапці (або інше місце де використовується поп-ап) прописати ідентифікатор поп-апа в посиланні, приклад: href="#popup" -->
+
+<!-- Приклад поп-апу -->
+<div class="wrapper">
+   <header id="header">
+      <a class="popup-link" href="#popup">PopUp №1</a>
+      <!-- Для картинок -->
+      <!-- <a class="popup-link" href="#popup">
+         <img src="" alt="image">
+      </a> -->
+      <!-- Для картинок -->
+   </header>
+   
+   
+   <div id="popup" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <!-- Потрібно шапці задати ідентифікатор (або в іншому місце де використовується поп-ап) та прописати його в посиланні, приклад: href="#header" - за умови, якщо шапка фіксована (якщо не фіксована, треба посилатись на маленький прозорий об'єкт поруч) -->
+            <a class="popup__close close-popup" href="#">X</a>
+            <!-- Якщо декілька поп-апів, треба замінити головний ідентифікатор -> id="popup" на інший, будь-який, з іншою назвою, наприклад image -->
+            <!-- Контент, який можна змінювати -->
+               <div class="popup__title">Модальне вікно №1</div>
+               <div class="popup__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illo, modi ut, vitae quae ex autem est voluptate amet animi mollitia accusantium placeat odit harum, nostrum earum? Quis, impedit minus!
+               </div>
+               <!-- ---------------------- -->
+               <!-- <div class="popup__image ">
+                  <img src="" alt="image">
+               </div> -->
+            <!-- Кінець контенту, який можна змінювати -->
+         </div>
+      </div>
+   </div>
+</div>
+
+<script src="popup.js"></script>
