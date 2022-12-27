@@ -1,5 +1,5 @@
 import fs from 'fs';
-import fonter from 'gulp-fonter';
+import fonter from 'gulp-fonter-fix';
 import ttf2woff2 from 'gulp-ttf2woff2';
 
 export const otfToTtf = () => {
@@ -44,7 +44,7 @@ export const ttfToWoff = () => {
 
 export const fontsStyle = () => {
 	// Файл стилів підключення шрифтів
-	let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+	let fontsFile = `${app.path.srcFolder}/scss/_fonts/fonts.scss`;
 	// Перевіряєм чи існують файли шрифтів
 	fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
 		if (fontsFiles) {
@@ -84,7 +84,7 @@ export const fontsStyle = () => {
 				}
 			} else {
 				// Якщо файл існує, виводимо повідомлення
-				console.log("Файл scss/fonts.scss вже існує. Для оновлення файлу його потрібно видалити!");
+				console.log("Файл scss/_fonts/fonts.scss вже існує. Для оновлення файлу його потрібно видалити!");
 			}
 		}
     });
