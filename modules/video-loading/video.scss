@@ -1,0 +1,75 @@
+.video {
+   width: 100%;
+   height: 0;
+   padding-bottom: 31.25%;
+   background-color: $lightGreen;
+   position: relative;
+   cursor: pointer;
+
+   &--enabled .video__body {
+      display: none;
+   }
+
+   &:hover .video__button {
+      background-color: $green;
+   }
+
+   &__iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   &__title {
+      font-family: 'Raleway';
+      font-weight: 800;
+      font-size: 62px;
+      line-height: 73px;
+      letter-spacing: 0.01em;
+      margin-bottom: 20px;
+   }
+
+   &__sub-title {
+      font-family: 'Raleway';
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 29px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      max-width: 560px;
+      margin-bottom: 20px;
+   }
+
+   &__button {
+      width: 61px;
+      height: 61px;
+      background-color: transparent;
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease-in-out;
+
+      svg {
+         width: 12px;
+         height: 17px;
+         fill: #fff;
+         margin-left: 3px;
+      }
+   }
+}

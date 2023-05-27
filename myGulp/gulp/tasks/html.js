@@ -12,12 +12,14 @@ export const html = () => {
         )
         .pipe(fileInclude())
         .pipe(app.plugins.replace(/@img\//g, 'img/'))
+        // розкоментувати якщо потрібні webp зображення
         // .pipe(
         //     app.plugins.if(
         //         app.isBuild,
         //         webpHtmlNosvg()
         //     )
         // )
+        // розкоментувати якщо потрібні webp зображення
         .pipe(
             app.plugins.if(
                 app.isBuild,

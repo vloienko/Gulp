@@ -1,0 +1,34 @@
+.time-count__content {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+
+.time-count__item {
+   text-align: center;
+}
+
+.time-count__val {
+   font-size: 79px;
+   font-weight: 700;
+   padding: 7px 12px;
+   letter-spacing: 26px;
+   background-repeat: no-repeat;
+}
+
+.time-count__separator {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 95px;
+   text-align: center;
+   margin: 0px 10px 0px -20px;
+}
+
+.time-count__text {
+   font-size: 22px;
+   text-transform: none;
+   margin-right: 15%;
+}

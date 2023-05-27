@@ -10,12 +10,14 @@ export const images = () => {
             }))
         )
         .pipe(app.plugins.newer(app.path.build.images))
+        // розкоментувати якщо потрібні webp зображення (також розкоментувати в html.js, scss.js, src/js/modules/_static/webp.js та підключити в app.js)
         // .pipe(
         //     app.plugins.if(
         //         app.isBuild,
         //         webp()
         //     )
         // )
+        // розкоментувати якщо потрібні webp зображення
         .pipe(
             app.plugins.if(
                 app.isBuild,
